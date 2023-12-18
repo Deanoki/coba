@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -5,7 +6,7 @@ const authRoutes = require("./src/routes/authRoutes");
 const herbalRoutes = require("./src/routes/herbalRoutes");
 const recipeRoutes = require("./src/routes/recipeRoutes");
 const complaintRoutes = require("./src/routes/complaintRoutes");
-const userFavoriteRoutes = require('./src/routes/userFavoriteRoutes');
+const userFavoriteRoutes = require("./src/routes/userFavoriteRoutes");
 
 const app = express();
 const port = process.env.PORT || 5000;
